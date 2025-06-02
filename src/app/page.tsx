@@ -21,8 +21,9 @@ export default async function Home() {
 
   if (!data?.success) {
     return (
-      <main className="bg-[#181823] min-h-screen flex items-center justify-center text-white">
-        <div className="text-center md:w-[500px] w-full h-fit bg-[#232533] 
+      <main className="bg-[#181823] min-h-screen flex items-center 
+      justify-center text-white md:!p-16 !p-8">
+        <div className="text-center w-full h-fit bg-[#232533] 
         rounded-lg border-2 border-gray-500 !p-6">
           <h2 className="text-2xl font-semibold">Failed to Fetch</h2>
           <p className="mt-2">Something went wrong while fetching data.</p>
@@ -33,7 +34,7 @@ export default async function Home() {
 
   return (
     <main className="bg-[#181823] min-h-screen flex items-center 
-    justify-center md:p-12 !p-6">
+    justify-center md:!p-10 !p-6">
       <AssetData data={data?.data}/>
     </main>
   );

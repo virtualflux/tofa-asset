@@ -68,7 +68,7 @@ const AssetData: React.FC<MaintenanceResponse> = ({data}) => {
 
 
   return (
-    <div className='md:w-[800px] w-full h-fit bg-[#232533] 
+    <div className='w-full h-fit bg-[#232533] 
     rounded-lg border-2 border-gray-500 !p-6'>
         <div className='w-full flex items-center justify-between gap-8'>
           <Image
@@ -163,8 +163,8 @@ const AssetData: React.FC<MaintenanceResponse> = ({data}) => {
           openModal.isOpen &&
           <div onClick={()=>setOpenModal({isOpen: false, title: '', maintenance: []})}
           className='w-full h-screen bg-black/15 fixed top-0 right-0 flex 
-          items-center justify-center !p-8 animate-fadein'>
-            <div className='md:w-[600px] w-full bg-[#181823] !p-2 rounded-lg'
+          items-center justify-center animate-fadein md:!p-16 !p-8'>
+            <div className='w-full bg-[#181823] !p-2 rounded-lg'
             onClick={(e)=>e.stopPropagation()}>
               <div className='w-full flex items-center justify-between'>
                   <h1 className='text-xl font-bold text-white underline mb-4'>
