@@ -1,8 +1,5 @@
 import AssetData from "@/components/AssetData";
 
-type Props = {
-  searchParams: { [key: string]: string | string[] | undefined }
-}
 
 const fetchMaintenance = async () => {
   try {
@@ -17,7 +14,7 @@ const fetchMaintenance = async () => {
 
 export const revalidate = 0
 
-export default async function Home({ searchParams }: Props) {
+export default async function Home() {
 
 
   const data = await fetchMaintenance();

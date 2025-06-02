@@ -1,7 +1,7 @@
 
 
 
-export async function GET(req: Request){
+export async function GET(){
     try {
 
         const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/tofa/assets`);
